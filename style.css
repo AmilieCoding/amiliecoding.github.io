@@ -1,15 +1,6 @@
-@keyframes moveIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-    from {position: initial;}
-    to {position: -10px;}
-}
-
 h1 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    opacity: 0;
+    opacity: 1;
     font-size: 50px;
-    animation-name: moveIn;
-    animation-duration: 2s;
 }
