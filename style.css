@@ -8,5 +8,5 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
     animation-name: moveIn;
-    animation-duration: 4s;
+    animation-duration: 10s;
 }
