@@ -1,6 +1,8 @@
 @keyframes moveIn {
     from {opacity: 0;}
     to {opacity: 1;}
+    from {position: initial;}
+    to {position: -10px;}
 }
 
 h1 {
@@ -9,5 +11,5 @@ h1 {
     opacity: 0;
     font-size: 50px;
     animation-name: moveIn;
-    animation-duration: 10s;
+    animation-duration: 4s;
 }
