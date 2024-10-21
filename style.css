@@ -49,3 +49,32 @@ ul {
     background-color: #111;
     border-radius: 20px;
   }
+
+  h3 {
+    margin-left: 10px;
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 1;
+    font-size: 40px;
+    color: #cdd6f4;
+}
+
+h4 {
+  margin-left: 10px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 1;
+  font-size: 20px;
+  color: #cdd6f4;
+}
+
+h4 a {
+  color: #cdd6f4;
+  letter-spacing: -0.025rem;
+  font-size: 1em;
+  line-height: 1.75;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
