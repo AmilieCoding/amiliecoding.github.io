@@ -1,7 +1,15 @@
 * {
     background-color: #232634;
+    padding: 0;
+    margin: 0;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Header - Banner and Gradient */
 .mainbanner {
     position: relative;
     overflow: hidden;
@@ -24,93 +32,8 @@
     background: linear-gradient(to top, rgba(35, 38, 52, 1), rgba(0, 0, 0, 0) 75%);
 }
 
-ul {
-    position: absolute;
-    top: 0;
-    right: 0;
-    list-style-type: none;
-    margin-top: 2px;
-    margin-right: 7px;
-    padding: 1px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    z-index: 2;
-    background-color: #232634;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-  
-li {
-    float: left;
-}
-  
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-}
-
-
-  
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
-.dotfilesImage img {
-    transform: translate(1%, 22%);
-    max-width: 750px;
-    max-height: 750px;
-    border: 5px solid;
-    border-color: #99d1db;
-    border-radius: 10px;
-    padding-left: 23px;
-}
-
-h5 {
-    transform: translate(81%, -130%);
-    max-width: 1000px;
-    padding-right: 25px;
-    font-size: 20px;
-    text-align: left;
-    color: #babbf1;
-    background: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h4 {
-    color: #babbf1;
-    position: absolute;
-    background: none;
-    text-align: left;
-    padding-left: 23px;
-    font-size: 20px;
-    transform: translateY(65px);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h3 {
-    color: #babbf1;
-    position: relative;
-    background: none;
-    text-align: left;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    padding-left: 5px;
-    font-size: 50px;
-    transform: translateY(130px);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1 {
+/* Header Content - Includes page title layered over the banner */
+.headerContent h1 {
     color: #babbf1;
     position: absolute;
     background: none;
@@ -121,7 +44,7 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2 {
+.headerContent h2 {
     color: #babbf1;
     position: absolute;
     background: none;
@@ -130,4 +53,48 @@ h2 {
     padding-right: 23px;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dotfiles - Section describing the dotfiles */
+.dotfilesContent h1 {
+    color: #babbf1;
+    position: relative;
+    background: none;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-left: 5px;
+    font-size: 50px;
+    transform: translateY(130px);
+    margin-left: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dotfilesImage img {
+    transform: translate(1%, 35%);
+    max-width: 750px;
+    max-height: 750px;
+    border: 5px solid;
+    border-color: #99d1db;
+    border-radius: 10px;
+    margin-left: 23px;
+}
+
+.dotfilesContent h2 {
+    color: #babbf1;
+    position: absolute;
+    background: none;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 810px;
+    transform: translateY(-75%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: fit-content;
+}
+
+@media screen (412, 915){
+    .headerContent h1 {
+        font-size: 20px;
+    }
 }
