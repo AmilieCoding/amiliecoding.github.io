@@ -36,14 +36,12 @@ ul {
     z-index: 2;
     background-color: #232634;
     border-radius: 20px;
-    overflow: hidden;
 }
 
-  
 li {
     float: left;
 }
-  
+
 li a {
     display: block;
     color: white;
@@ -57,8 +55,6 @@ li a:hover {
     border-radius: 20px;
 }
 
-
-  
 body, html {
     margin: 0;
     padding: 0;
@@ -74,60 +70,88 @@ body, html {
     padding-left: 23px;
 }
 
+h5, h4, h3, h1, h2 {
+    color: #babbf1;
+    background: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive Styles */
 h5 {
     transform: translate(81%, -130%);
     max-width: 1000px;
     padding-right: 25px;
     font-size: 20px;
     text-align: left;
-    color: #babbf1;
-    background: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h4 {
-    color: #babbf1;
     position: absolute;
-    background: none;
     text-align: left;
     padding-left: 23px;
     font-size: 20px;
     transform: translateY(65px);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h3 {
-    color: #babbf1;
     position: relative;
-    background: none;
-    text-align: left;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-left: 5px;
     font-size: 50px;
     transform: translateY(130px);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
-    color: #babbf1;
     position: absolute;
-    background: none;
     top: 47%;
     left: 13%;
     transform: translate(-50%, -50%);
     font-size: 70px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
-    color: #babbf1;
-    position: absolute;
-    background: none;
     text-align: center;
     padding-left: 23px;
     padding-right: 23px;
     font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    li {
+        float: none;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+        top: 40%;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h3 {
+        font-size: 30px;
+        transform: translateY(100px);
+    }
+
+    .dotfilesImage img {
+        max-width: 90%;
+        padding-left: 0;
+    }
+
+    .gradient-overlay {
+        background: linear-gradient(to top, rgba(35, 38, 52, 1), rgba(0, 0, 0, 0) 80%);
+    }
+
+    ul {
+        margin-right: 10px;
+        margin-top: 5px;
+    }
 }
