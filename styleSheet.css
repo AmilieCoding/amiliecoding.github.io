@@ -1,6 +1,6 @@
 * {
     background-color: #232634;
-    box-sizing: border-box; /* Ensure padding and borders are included in total width/height */
+    box-sizing: border-box;
 }
 
 body, html {
@@ -59,13 +59,16 @@ li a:hover {
     border-radius: 20px;
 }
 
+.dotfilesImage {
+    margin: 20px 0; /* Add margin to create space above and below the image */
+    text-align: center; /* Center the image */
+}
+
 .dotfilesImage img {
-    transform: translate(1%, 22%);
     max-width: 100%;
     height: auto;
     border: 5px solid #99d1db;
     border-radius: 10px;
-    padding-left: 23px;
 }
 
 h5, h4, h3, h1, h2 {
@@ -139,9 +142,8 @@ h2 {
         transform: translateY(0);
     }
 
-    .dotfilesImage img {
-        max-width: 90%;
-        padding-left: 0;
+    .dotfilesImage {
+        margin: 20px 0; /* Maintain margin for mobile */
     }
 
     .gradient-overlay {
