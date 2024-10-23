@@ -1,5 +1,11 @@
 * {
     background-color: #232634;
+    box-sizing: border-box; /* Ensure padding and borders are included in total width/height */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
 }
 
 .mainbanner {
@@ -26,12 +32,10 @@
 
 ul {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     list-style-type: none;
-    margin-top: 2px;
-    margin-right: 7px;
-    padding: 1px;
+    padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 2;
     background-color: #232634;
@@ -55,17 +59,11 @@ li a:hover {
     border-radius: 20px;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
 .dotfilesImage img {
     transform: translate(1%, 22%);
-    max-width: 750px;
-    max-height: 750px;
-    border: 5px solid;
-    border-color: #99d1db;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #99d1db;
     border-radius: 10px;
     padding-left: 23px;
 }
@@ -78,35 +76,28 @@ h5, h4, h3, h1, h2 {
 
 /* Responsive Styles */
 h5 {
-    transform: translate(81%, -130%);
-    max-width: 1000px;
     padding-right: 25px;
     font-size: 20px;
-    text-align: left;
 }
 
 h4 {
-    position: absolute;
     text-align: left;
     padding-left: 23px;
     font-size: 20px;
-    transform: translateY(65px);
 }
 
 h3 {
-    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 5px;
     font-size: 50px;
-    transform: translateY(130px);
 }
 
 h1 {
     position: absolute;
-    top: 47%;
-    left: 13%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 70px;
 }
@@ -120,6 +111,15 @@ h2 {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    ul {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 10px;
+        padding: 10px;
+        width: auto;
+    }
+
     li {
         float: none;
         width: 100%;
@@ -127,18 +127,16 @@ h2 {
 
     h1 {
         font-size: 40px;
-        top: 40%;
     }
 
     h2 {
         font-size: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 10px;
     }
 
     h3 {
         font-size: 30px;
-        transform: translateY(100px);
+        transform: translateY(0);
     }
 
     .dotfilesImage img {
@@ -148,10 +146,5 @@ h2 {
 
     .gradient-overlay {
         background: linear-gradient(to top, rgba(35, 38, 52, 1), rgba(0, 0, 0, 0) 80%);
-    }
-
-    ul {
-        margin-right: 10px;
-        margin-top: 5px;
     }
 }
