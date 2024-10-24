@@ -133,6 +133,34 @@ li a:hover {
     }
 }
 
+@media screen and (max-width: 1170px) {
+    .headerContent h1 {
+        font-size: 50px;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -2000%); 
+        transition: transform 0% -10%;
+    }
+
+    .dotfilesImage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -193%);
+        text-align: center;
+    }
+
+    .dotfilesText h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #cad3f5;
+        text-align: center;
+        transform: translate(0%, 145%);
+        max-width: 800px;
+        padding: 20px;
+    }
+}   
+
 @media screen and (max-width: 1020px) {
     .headerContent h1 {
         font-size: 50px;
